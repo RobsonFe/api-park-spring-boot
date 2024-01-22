@@ -12,7 +12,7 @@ public class UsuarioService {
     private final UsuarioRepository usuarioRepository;
 
     @Transactional
-    public void salvar(Usuario usuario) {
+    public Usuario salvar(Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
 }
